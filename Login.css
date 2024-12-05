@@ -1,0 +1,134 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+body {
+    width: 100%;
+    display:flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    padding: 0 10px;
+    color: white;
+    background:url(https://png.pngtree.com/background/20230602/original/pngtree-study-books-education-material-on-table-with-beautiful-natural-background-picture-image_2859558.jpg),black;
+    background-position: center;
+    background-size: cover;
+}
+
+.wrapper{
+    width: 500px;
+    border-radius: 10px;
+    padding: 30;
+    text-align: center;
+    box-shadow: 0 0 35px palegreen;
+    border: 1px solid whitesmoke;
+    backdrop-filter: blur(20px);
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+h1 {
+    font-size: 2.5rem;
+    margin-bottom: 25px;
+    color: whitesmoke;
+}
+
+.input-field {
+    position: relative;
+    border-bottom: 1px solid aliceblue;
+    margin: 10px 0;
+} 
+
+.input-field label {
+    position: absolute;
+    color: whitesmoke;
+    top: 50%;
+    left: 0;
+    transform: translateY(-50%);
+    font-size: 15px;
+    pointer-events: none;
+    transition: 0.20s ease;
+}
+
+.input-field input{
+    width: 100%;
+    height: 40px;
+    color: whitesmoke;
+    background: transparent;
+    border: none;
+    outline: none;
+    font-size: 15px;
+}
+
+.input-field .icon{
+    position: absolute;
+    right: 8px;
+    cursor: pointer;
+}
+
+.input-field .togglepassword{
+    position: absolute;
+    right: 8px;
+    cursor: pointer;
+}
+.input-field input:focus~label,
+.input-field input:valid~label {
+    font-size: 0.8rem;
+    top: 10px;
+    transform: translateY(-120%);
+}
+
+.forget{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 25px 0 35px 0;
+    color: whitesmoke;
+}
+
+#remember{
+    accent-color: black;
+}
+
+.forget label{
+    display: flex;
+    align-items: center;
+}
+
+.forget label p{
+    margin-left: 5px;
+}
+
+.wrapper a{
+    color: aquamarine;
+    text-decoration: unset;
+}
+
+button{
+    background: transparent;
+    color:whitesmoke;
+    font-weight: 600;
+    padding: 10px;
+    cursor: pointer;
+    border: 2px solid whitesmoke;
+    border-radius: 20px;
+    font-size: 15px;
+    transition: 0.4s ease;
+}
+
+button:hover{
+    background: whitesmoke;
+    color: black;
+}
+
+.register{
+    text-align: center;
+    margin-top: 20px;
+    color: whitesmoke;
+}

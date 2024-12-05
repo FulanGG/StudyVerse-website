@@ -1,0 +1,227 @@
+<html>
+<head>
+    <title>StudyTable</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+            background: url(https://c1.wallpaperflare.com/preview/967/303/707/vintage-boards-wood-the-background-texture.jpg);
+            background-size: cover;
+        }
+
+        h1 {
+            text-align: center;
+            color: aqua;
+        }
+
+        table {
+            width: 80%;
+            margin: 20px auto;
+            border-collapse: collapse;
+            background-color: white;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+
+        table th, table td {
+            padding: 12px;
+            text-align: center;
+            border: 1px solid #ddd;
+        }
+
+        table th {
+            background-color: #007BFF;
+            color: white;
+            font-weight: bold;
+        }
+
+        table tr:nth-child(even) {
+            background-color: #f2f2f2;
+        }
+
+        table tr:hover {
+            background-color: #f1c40f;
+            color: white;
+        }
+
+        .table-title {
+            text-align: center;
+            font-size: 1.5em;
+            color: aqua;
+            margin-top: 40px;
+        }
+        button{
+            background: whitesmoke;
+            padding: 13px;
+            cursor: pointer;
+            border-radius: 13px;
+            font-size: 18px;
+        }
+        button a{
+            text-decoration: unset;
+            color: black;
+        }
+        button:hover{
+            background-color: #f1c40f;
+        }
+    </style>
+</head>
+<body>
+    <h1>Information Table</h1>
+
+    <div class="table-title">Table 1</div>
+    <table>
+        <thead>
+            <tr>
+                <th>ID</th>
+                <th>Name</th>
+                <th>Stock (Store)</th>
+                <th>Stock (Warehouse)</th>
+                <th>Price (Rp)</th>
+                <th>Brand</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>1</td>
+                <td>Vespa Kopling</td>
+                <td>5</td>
+                <td>10</td>
+                <td>23,000,000</td>
+                <td>HaiHai</td>
+            </tr>
+            <tr>
+                <td>2</td>
+                <td>Astrea</td>
+                <td>10</td>
+                <td>0</td>
+                <td>5,000,000</td>
+                <td>Yamaha</td>
+            </tr>
+            <tr>
+                <td>3</td>
+                <td>Vario</td>
+                <td>6</td>
+                <td>4</td>
+                <td>30,000,000</td>
+                <td>Daihatsu</td>
+            </tr>
+            <tr>
+                <td>4</td>
+                <td>Honda-XSR</td>
+                <td>10</td>
+                <td>10</td>
+                <td>20,000,000</td>
+                <td>Honda</td>
+            </tr>
+            <tr>
+                <td>5</td>
+                <td>MX-King</td>
+                <td>2</td>
+                <td>10</td>
+                <td>18,500,000</td>
+                <td>Yamaha</td>
+            </tr>
+        </tbody>
+    </table>
+
+    <div class="table-title">Table 2</div>
+    <table>
+        <thead>
+            <tr>
+                <th>Name</th>
+                <th>Subject</th>
+                <th>Mark</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td rowspan="4">Fulandy Surya</td>
+            </tr>
+            <tr>
+                <td>Arabic</td>
+                <td>95</td>
+            </tr>
+            <tr>
+                <td>Japan</td>
+                <td>98</td>
+            </tr>
+            <tr>
+                <td>Russian</td>
+                <td>92</td>
+            </tr>
+        </tbody>
+    </table>
+
+    <div class="table-title">Table 3 (Schedule)</div>
+    <table>
+        <thead>
+            <tr>
+                <th>Day</th>
+                <th>1</th>
+                <th>2</th>
+                <th>3</th>
+                <th>4</th>
+                <th>5</th>
+                <th>6</th>
+                <th>7</th>
+                <th>8</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>Monday</td>
+                <td>Silent Reading<br>Furqon, Latif Hamdani, BA.</td>
+                <td>Mathematics<br>Sutiro, S.Si, MT</td>
+                <td>EMC Extended<br>Aldila Nimas Savitri, S.Pd</td>
+                <td>EMC Core<br>Eisha Sabila Dieni Hanifa, S.Pd</td>
+                <td>Skills-Pathways<br>Thomas Alexander Uty, M.B.A</td>
+                <td>History<br>Muslim Mughofar</td>
+                <td colspan="2">Civics<br>Qobul Imron Rosada, S.Sos</td>
+            </tr>
+            <tr>
+                <td>Tuesday</td>
+                <td><span class="subject">Silent Reading</span><br><span class="teacher">Furqon, Latif Hamdani, BA.</span></td>
+                <td><span class="subject">Bahasa Indonesia</span><br><span class="teacher">Nur Annisa, S.Pd.</span></td>
+                <td><span class="subject">Art</span><br><span class="teacher">Muhammad Mulyono</span></td>
+                <td colspan="2"><span class="subject">Mathematics</span><br><span class="teacher">Sutiro, S.Si., MT.</span></td>
+                <td colspan="2"><span class="subject">Chemistry</span><br><span class="teacher">Resky Evraldi Saputra, B.Sc., MT.</span></td>
+                <td colspan="2"><span class="subject">Physical Education</span><br><span class="teacher">Sahdatul Umam, S.Pd.</span></td>
+            </tr>
+            <tr>
+                <td>Wednesday</td>
+                <td><span class="subject">Silent Reading</span><br><span class="teacher">Furqon, Latif Hamdani, BA.</span></td>
+                <td><span class="subject">Physics</span><br><span class="teacher">Diastati Puspita Ning Ayu, S.Si.</span></td>
+                <td colspan="2"><span class="subject">Bahasa Indonesia</span><br><span class="teacher">Nur Annisa, S.Pd.</span></td>
+                <td colspan="2"><span class="subject">Geography</span><br><span class="teacher">Maulida Indri Nur Azizah, S.Pd.</span></td>
+                <td><span class="subject">Civics</span><br><span class="teacher">Qobul Imron Rosada, S.Sos.</span></td>
+                <td colspan="2"><span class="subject">ICT</span><br><span class="teacher">Nurul Gomariyah Eka</span></td>
+            </tr>
+            <tr>
+                <td>Thursday</td>
+                <td><span class="subject">Silent Reading</span><br><span class="teacher">Furqon, Latif Hamdani, BA.</span></td>
+                <td colspan="2"><span class="subject">ICT</span><br><span class="teacher">Nurul Gomariyah Eka</span></td>
+                <td colspan="2"><span class="subject">EMC Extended</span><br><span class="teacher">Aldila Nimas Savitri, S.Pd.</span></td>
+                <td colspan="2"><span class="subject">Biology</span><br><span class="teacher">Maksat Yazylyev</span></td>
+                <td colspan="2"><span class="subject">Chemistry</span><br><span class="teacher">Resky Evraldi Saputra, B.Sc., MT.</span></td>
+            </tr>
+            <tr>
+                <td>Friday</td>
+                <td><span class="subject">Physics</span><br><span class="teacher">Diastati Puspita Ning Ayu, S.Si.</span></td>
+                <td colspan="2"><span class="subject">Mathematics</span><br><span class="teacher">Sutiro, S.Si., MT.</span></td>
+                <td colspan="2"><span class="subject">Arabic</span><br><span class="teacher">Ucu Suhendary, Lc.</span></td>
+                <td colspan="2"><span class="subject">Bahasa Sunda</span><br><span class="teacher">Abdul Kadir Abdullah, S.E., M.Pd.</span></td>
+                <td colspan="2"><span class="subject">Economy</span><br><span class="teacher">Muslim Mughofar</span></td>
+            </tr>
+            <tr>
+                <td>Saturday</td>
+                <td colspan="10"><span class="subject">Social Activity</span><br><span class="teacher">Furqon, Latif Hamdani, BA.</span></td>
+            </tr>
+        </tbody>
+    </table>
+
+    <button><ion-icon id="icon" name="caret-back-outline"></ion-icon><a href="Main.html">Back</a></button>
+    
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+</body>
+</html>

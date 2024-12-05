@@ -1,0 +1,68 @@
+<html> 
+    <head>
+        <title>StudyVerse Site</title>
+        <link rel="stylesheet" href="Login.css">
+    </head>
+    <body>
+        <div class="wrapper">
+            <form action="#">
+                <h1>StudyVerse</h1>
+                <div class="input-field">
+                    <span class="icon"><ion-icon name="mail-outline"></ion-icon></span>
+                    <input type="text" required id="email">
+                    <label>Enter your email</label>
+                </div>
+                
+                <div class="input-field">
+                    <span class="icon" onclick="togglepassword()"><ion-icon name="lock-closed-outline" ></ion-icon></span>
+                    <input type="password" required id="password">
+                    <label>Enter your password</label>
+                </div>
+                
+                <div class="forget">
+                    <label for="remember">
+                        <input type="checkbox" id="remember">
+                        <p>Remember me</p>
+                    </label>
+                    <a href="#">Forgot Password?</a>
+                </div>
+                
+                <button onclick="func()">Log In</button>
+                <div class="register">
+                    <p>Don't have an account? <a href="#">Register</a> </p>
+                </div>
+            </form>
+        </div>
+
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+    
+    <script>
+        function func(){
+        var email = document.getElementById("email").value;
+        var password = document.getElementById("password").value;
+
+        if
+        (email=='fulan@gmail.com' && password=='123456')
+        {window.location.assign("Main.html");
+        alert("Login Successfully");}
+        
+        else
+        {alert("Invalid Infromation");
+        return;}
+        }
+    </script>
+
+    <script>
+        function togglepassword(){
+            var passwordField = documnet.getElementById("password");
+            if(passwordField.type === "password"){
+                passwordField.type = "type";
+            }
+            else{
+                passwordField.type = "password";
+            }
+        }
+    </script>
+    </body>
+</html>
